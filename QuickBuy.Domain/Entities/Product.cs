@@ -1,4 +1,4 @@
-﻿namespace QuickBuy.Domain.Entities
+namespace QuickBuy.Domain.Entities
 {
     public class Product : BaseEntity
     {
@@ -9,6 +9,8 @@
 
         public override void Validate()
         {
+            ClearMessageValidation();
+
             if (string.IsNullOrEmpty(Name))
                 AddMessageValidation("Name shouldn't be empty!");
 

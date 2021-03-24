@@ -1,4 +1,4 @@
-﻿using QuickBuy.Domain.ValueObject;
+using QuickBuy.Domain.ValueObject;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;

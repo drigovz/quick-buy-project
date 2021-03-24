@@ -8,6 +8,8 @@
 
         public override void Validate()
         {
+            ClearMessageValidation();
+
             if (ProductId == 0)
                 AddMessageValidation("Product reference not identified!");
 

@@ -14,6 +14,8 @@ namespace QuickBuy.Domain.Entities
 
         public override void Validate()
         {
+            ClearMessageValidation();
+
             if (string.IsNullOrEmpty(Email))
                 AddMessageValidation("Email shouldn't be empty!");
 
