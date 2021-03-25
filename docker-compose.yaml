@@ -1,0 +1,13 @@
+version: "3.7"
+services:
+  mssql-server:
+    container_name: mssqlserver
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    volumes:
+       - C:\mssql:/var/opt/mssql/data
+    ports: 
+      - "1433:1433"
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: "sa12345@BD"
+      MSSQL_PID: "Express"
