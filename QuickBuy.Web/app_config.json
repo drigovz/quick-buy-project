@@ -1,0 +1,5 @@
+{
+  "ConnectionStrings": {
+    "DefaultConnection": "Data Source=localhost,1433; initial catalog=QuickBuyDb; user id=sa; password=sa12345@BD"
+  }
+}
